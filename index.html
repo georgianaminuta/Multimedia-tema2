@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Game</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <script type="text/javascript" src="scripts/wordle.js"></script>
+</head>
+
+<body>
+    <h1>WORDLE</h1>
+
+    <div class="stats">
+        <div class="stat">
+            <div id="gamesPlayed">0</div>
+            <div>Played</div>
+        </div>
+        <div class="stat">
+            <div id="winPercent">0%</div>
+            <div>Win %</div>
+        </div>
+        <div class="stat">
+            <div id="currentStreak">0</div>
+            <div>Streak</div>
+        </div>
+    </div>
+
+    <div id="errorMsg"></div>
+
+    <div id="board"></div>
+    <input type="text" id="guessInput" maxlength="5" />
+    <button type="button" id="guessButton">Guess</button>
+
+    <button type="button" id="newGameButton" style="display: none;">New Game</button>
+</body>
+
+</html>
